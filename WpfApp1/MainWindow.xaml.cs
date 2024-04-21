@@ -145,7 +145,7 @@ namespace Calculator
                 }
 
             }
-            else if (btnClickPerformed == "x^n")
+            else if (btnClickPerformed == "x^n") //возведение числа в любую степень
             {
                 outputWin.Text = (Math.Pow(enterFirst, enterSecond)).ToString();
             }
