@@ -24,8 +24,8 @@ namespace Calculator
         public MainWindow()
         {           
                 InitializeComponent();
-            DateTime currentDate = DateTime.Now; //вывод времени в строке состояния
-            statusText.Text = currentDate.ToString();
+            DateTime currentDate = DateTime.Now; 
+            statusText.Text = currentDate.ToString(); //вывод времени в строке состояния
         }
 
         private void btn_click(object sender, RoutedEventArgs e) { // ввод цифр
@@ -63,7 +63,7 @@ namespace Calculator
         {
             double sq = Convert.ToDouble(outputWin.Text);
 
-            if (sq < 0)
+            if (sq < 0) // проверка числа на ноль
             {
                 MessageBox.Show("Вы пытаетесь взять квадратный корень из отрицательного числа!");
                 outputWin.Clear();
@@ -103,7 +103,7 @@ namespace Calculator
             outputWin.Text = Convert.ToString(cg);
         }
 
-        private void oneDivX_Click(object sender, RoutedEventArgs e)
+        private void oneDivX_Click(object sender, RoutedEventArgs e) // 1/x
         {
              double x = Convert.ToDouble(1 / Convert.ToDouble(outputWin.Text));
             if (Convert.ToDouble(outputWin.Text) == 0)
