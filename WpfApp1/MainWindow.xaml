@@ -55,7 +55,7 @@
 
 
         <Button x:Name="btnEqual" Content="=" Grid.Column="2" Grid.Row="5"  Grid.ColumnSpan="2"  Background="MediumPurple" FontSize="30" Click="btnEqual_Click" />
-        <Button x:Name="btnClear" Content="C" Grid.Column="4" Grid.Row="5"  Background="MediumPurple" FontSize="30" Click="btnClear_click"/>
+        <Button x:Name="btnClear" Content="C" Grid.Column="4" Grid.Row="5"  Background="HotPink" FontSize="30" Click="btnClear_click"/>
 
 
         <Label x:Name="status"  Content="Program started: "  Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="5" VerticalContentAlignment="Center" />
